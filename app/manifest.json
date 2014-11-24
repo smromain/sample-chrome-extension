@@ -10,7 +10,6 @@
   "default_locale": "en",
   "background": {
     "scripts": [
-      "scripts/chromereload.js",
       "scripts/background.js"
     ]
   },
@@ -19,10 +18,8 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "my awesome chrome extension",
-    "default_popup": "popup.html"
+    "default_title": "my awesome chrome extension"
   },
-  "options_page": "options.html",
   "omnibox": {
     "keyword": "my awesome chrome extension"
   },
@@ -35,15 +32,13 @@
       "css": [
         "styles/main.css"
       ],
-      "js": [
-        "scripts/contentscript.js"
-      ],
       "run_at": "document_end",
       "all_frames": false
     }
   ],
   "permissions": [
     "tabs",
+    "activeTab",
     "management",
     "http://*/*",
     "https://*/*"
