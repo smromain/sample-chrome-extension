@@ -38,6 +38,7 @@
   ],
   "permissions": [
     "tabs",
+    "notifications",
     "activeTab",
     "management",
     "http://*/*",
